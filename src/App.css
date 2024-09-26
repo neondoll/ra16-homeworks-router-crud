@@ -1,0 +1,22 @@
+#root { max-width: 1280px; margin: 0 auto; padding: 2rem; }
+
+.page { display: flex; flex-direction: column; gap: 0.625rem; }
+
+.page__alert { font-style: italic; text-align: center; }
+
+.post { position: relative; z-index: 0; pointer-events: none; }
+
+.post__header {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.post__image { grid-row: span 2 / span 2; width: 2.5rem; height: 2.5rem; }
+
+.post__link { color: inherit; text-decoration: inherit; pointer-events: auto; }
+
+.post__link::before { content: ""; position: absolute; inset: 0; z-index: -1; }
+
+.post-form .card-footer { display: flex; justify-content: space-between; align-items: center; }
